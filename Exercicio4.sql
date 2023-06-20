@@ -12,4 +12,7 @@ add column idcursos int first;
 alter table cursos
 add primary key (idcursos);
 
+alter table cursos
+modify column idcursos int auto_increment;
+
 drop table if exists cursos;
