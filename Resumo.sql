@@ -163,3 +163,11 @@ join cursos c
 on c.idcurso = a.idcurso
 order by g.nome;
 select * from gafanhoto_assiste_curso;
+
+/* Comando para fazer uma união entre duas tabelas*/
+SELECT <COLUNAS_A_SEREM_JUNTADAS> FROM <NOME_DA_TBL_1>
+UNION SELECT <COLUNAS_A_SEREM_JUNTADAS> FROM <NOME_DA_TBL_2>;
+
+#Ex: 
+SELECT id, nome FROM pessoas
+UNION SELECT id, nome FROM projetos;
